@@ -1,0 +1,4 @@
+@Echo Off
+
+echo .
+pause
