@@ -1,0 +1,10 @@
+[Bb]in
+[Oo]bj
+*.suo
+*.user
+test-results
+*.pidb
+*.userprefs
+*.pfx
+cmd.exe
+[Pp]ackage
