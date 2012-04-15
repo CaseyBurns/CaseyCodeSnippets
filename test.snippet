@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>NUnit Test</Title>
+			<Shortcut>testn</Shortcut>
+			<Description>Code snippet for NUnit Test</Description>
+			<Author>Casey Burns</Author>
+			<SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+                <Literal Editable="true">
+                    <ID>subject</ID>
+                    <ToolTip>Subject to Test</ToolTip>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>scenario</ID>
+                    <ToolTip>Scenario to Test</ToolTip>
+                </Literal>
+                <Literal Editable="true">
+                    <ID>expected</ID>
+                    <ToolTip>Expected Outcome</ToolTip>
+                </Literal>
+            </Declarations>
+            <References>
+                <Reference>
+                    <Assembly>nunit.framework.dll</Assembly>
+                </Reference>
+            </References>	
+			<Code Language="csharp">
+                    <![CDATA[[Test]
+		public void $subject$_Given$scenario$_Should$expected$()
+		{
+			$selected$$end$
+		}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
